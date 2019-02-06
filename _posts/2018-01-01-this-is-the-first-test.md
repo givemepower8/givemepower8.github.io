@@ -15,7 +15,15 @@ categories: jekyll
 >
 >It takes a template directory containing raw text files in various formats, runs it through a converter like [Markdown](https://daringfireball.net/projects/markdown/syntax) and [Liquid](https://shopify.github.io/liquid/) renderer, and renders out a complete, ready-to-publish static website.
 
+### Common tasks
+
+[permanent links](https://jekyllrb.com/docs/permalinks/)
+
 ## GitHub Pages
+
+>GitHub Pages is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository.
+
+[GitHub Pages Learning Lab](https://lab.github.com/githubtraining/github-pages)
 
 [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
