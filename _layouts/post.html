@@ -7,6 +7,10 @@ layout: default
 
 <p class="view">by {{ page.author | default: site.author }}</p>
 
+{% if user %}
+  Hello {{ user.name }}!
+{% endif %}
+
 {{content}}
 
 {% if page.tags %}
