@@ -6,3 +6,5 @@ categories: jekyll test
 ---
 
 first test.
+
+[storm troop cat]({{ "/assets/imgs/stormtroopocat.jpg" | absolute_url }})
