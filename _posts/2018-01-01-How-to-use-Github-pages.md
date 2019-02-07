@@ -10,9 +10,9 @@ tags: [jekyll, Github Pages]
 
 Best ways to learn is to practice, write and teach.
 
->[GitHub Pages](https://pages.github.com/) is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository.
-
 To me, GitHub Pages is the perfect place to jog down all the technical notes in my lifelong learning process.
+
+>[GitHub Pages](https://pages.github.com/) is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository.
 
 The following is the list of some good resources to start off.
 
@@ -30,13 +30,15 @@ The following is the list of some good resources to start off.
 >
 >It takes a template directory containing raw text files in various formats, runs it through a converter like [Markdown](https://daringfireball.net/projects/markdown/syntax) and [Liquid](https://shopify.github.io/liquid/) renderer, and renders out a complete, ready-to-publish static website.
 
-[Pages](https://jekyllrb.com/docs/pages/) and [Posts](https://jekyllrb.com/docs/posts/) are the most important building blocks for creating content.
+After grokking the [directory structure](https://jekyllrb.com/docs/structure/), you need to understand the [Pages](https://jekyllrb.com/docs/pages/) and [Posts](https://jekyllrb.com/docs/posts/). Those two are the most important building blocks for creating content.
 
-[YAML](https://yaml.org/) [Front Matter](https://jekyllrb.com/docs/front-matter/) is used to configure the posts and pages.
+[YAML](https://yaml.org/) [Front Matter](https://jekyllrb.com/docs/front-matter/) is used to configure the variables in the posts and pages.
 
-[Permanent links](https://jekyllrb.com/docs/permalinks/) is used to instruct how the urls are generated.
+[Permanent links](https://jekyllrb.com/docs/permalinks/) is used to instruct Jekyll how the urls are generated.
 
 [Default github page Themes](https://pages.github.com/themes/) has built-in features and you still can [customize CSS and HTML in themes](https://help.github.com/articles/customizing-css-and-html-in-your-jekyll-theme/).
+
+If you don't like the default themes, you can use the _sass, _layouts, _includes and assets folders to implement your own design.
 
 ## Liquid
 
@@ -46,9 +48,9 @@ Liquid use double curly braces to render content.
 
 Curly braces and percent signs create the logic and control flow for templates.
 
-[More control flows](http://shopify.github.io/liquid/tags/control-flow/)
+Liquid supports [control flows](http://shopify.github.io/liquid/tags/control-flow/) which is often used with site.* variables.
 
-"\|" add filter support.
+"\|" add filter support inside the curly braces.
 
 [Standard Liquid filters](https://jekyllrb.com/docs/liquid/filters/#standard-liquid-filters)
 
