@@ -7,6 +7,20 @@ tags: jekyll github-page
 ---
 # How to use GitHub Pages
 
+Best ways to learn is to practice, write and teach.
+
+>[GitHub Pages](https://pages.github.com/) is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository.
+
+To me, GitHub Pages is the perfect place to jog down all the technical notes in my lifelong learning process.
+
+The following is the list of some good resources to start off.
+
+[GitHub Pages Basics](https://help.github.com/categories/github-pages-basics/)
+
+[GitHub Pages Learning Lab](https://lab.github.com/githubtraining/github-pages)
+
+[Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+
 ## Jekyll
 
 >[Jekyll](https://jekyllrb.com) is a simple, blog-aware, static site generator.
@@ -14,8 +28,6 @@ tags: jekyll github-page
 >Jekyll is the engine behind [GitHub Pages](https://pages.github.com/).
 >
 >It takes a template directory containing raw text files in various formats, runs it through a converter like [Markdown](https://daringfireball.net/projects/markdown/syntax) and [Liquid](https://shopify.github.io/liquid/) renderer, and renders out a complete, ready-to-publish static website.
-
-### Common tasks
 
 [YAML](https://yaml.org/) [Front Matter](https://jekyllrb.com/docs/front-matter/) is used to configure the posts and pages.
 
@@ -42,14 +54,6 @@ Curly braces and percent signs create the logic and control flow for templates.
 [Liquid more](https://help.shopify.com/en/themes/liquid)
 
 [Jekyll Liquid filters](https://jekyllrb.com/docs/liquid/filters/)
-
-## GitHub Pages
-
->GitHub Pages is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository.
-
-[GitHub Pages Learning Lab](https://lab.github.com/githubtraining/github-pages)
-
-[Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
 ### Bloggers use GitHub Pages
 
