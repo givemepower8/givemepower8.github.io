@@ -5,7 +5,7 @@ date:   2018-01-01 16:16:01 -0800
 categories: jekyll
 tags: jekyll github-page
 ---
-#
+<!-- markdownlint-disable MD041 MD002 -->
 
 ## Jekyll
 
