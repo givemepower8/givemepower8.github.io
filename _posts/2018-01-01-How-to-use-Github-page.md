@@ -5,7 +5,7 @@ date:   2018-01-01 16:16:01 -0800
 categories: jekyll
 tags: jekyll github-page
 ---
-<!-- markdownlint-disable MD041 MD002 -->
+# How to use GitHub Pages
 
 ## Jekyll
 
@@ -53,8 +53,8 @@ Curly braces and percent signs create the logic and control flow for templates.
 
 ### Bloggers use GitHub Pages
 
-[longqian.me](https://github.com/qian256/qian256.github.io)
+[http://longqian.me](https://github.com/qian256/qian256.github.io)
 
-[www.minddust.com](https://github.com/minddust/minddust.github.io)
+[http://www.minddust.com](https://github.com/minddust/minddust.github.io)
 
-[codinfox.github.io](https://github.com/codinfox/codinfox-lanyon)
+[http://codinfox.github.io](https://github.com/codinfox/codinfox-lanyon)
