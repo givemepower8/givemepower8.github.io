@@ -2,8 +2,8 @@
 layout: post
 title:  How to use GitHub Pages
 date:   2018-01-01 16:16:01 -0800
-categories: jekyll
-tags: jekyll github-page
+categories: [jekyll]
+tags: [jekyll, Github Pages]
 ---
 # How to use GitHub Pages
 
@@ -28,6 +28,8 @@ The following is the list of some good resources to start off.
 >Jekyll is the engine behind [GitHub Pages](https://pages.github.com/).
 >
 >It takes a template directory containing raw text files in various formats, runs it through a converter like [Markdown](https://daringfireball.net/projects/markdown/syntax) and [Liquid](https://shopify.github.io/liquid/) renderer, and renders out a complete, ready-to-publish static website.
+
+[Pages](https://jekyllrb.com/docs/pages/) and [Posts](https://jekyllrb.com/docs/posts/) are the most important building blocks for creating content.
 
 [YAML](https://yaml.org/) [Front Matter](https://jekyllrb.com/docs/front-matter/) is used to configure the posts and pages.
 
