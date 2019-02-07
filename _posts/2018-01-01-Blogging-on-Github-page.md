@@ -27,15 +27,9 @@ categories: jekyll
 
 > Safe, customer-facing template language for flexible web apps.
 
-Liquid use `{{ }}` template syntax to render content.
+Liquid use double curly braces to render content.
 
-Curly braces and percent signs: `{% %}` create the logic and control flow for templates
-
-```liquid
-{% if user %}
-  Hello {{ user.name }}!
-{% endif %}
-```
+Curly braces and percent signs create the logic and control flow for templates.
 
 [More control flows](http://shopify.github.io/liquid/tags/control-flow/)
 
