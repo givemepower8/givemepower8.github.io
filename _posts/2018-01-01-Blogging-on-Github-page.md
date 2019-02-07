@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GitHub Page notes 
+title:  How to use GitHub Pages
 date:   2018-01-01 16:16:01 -0800
 categories: jekyll
 tags: jekyll github-page
@@ -51,7 +51,7 @@ Curly braces and percent signs create the logic and control flow for templates.
 
 [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
-### Bloggers use GitHub Page
+### Bloggers use GitHub Pages
 
 [longqian.me](https://github.com/qian256/qian256.github.io)
 
