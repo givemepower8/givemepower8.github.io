@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  How to use GitHub Pages
+subtitle: How to use GitHub Pages
 date:   2018-01-01 16:16:01 -0800
 categories: [jekyll]
 tags: [jekyll, Github Pages]
