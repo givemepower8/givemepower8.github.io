@@ -3,6 +3,7 @@ layout: post
 title:  GitHub Page notes 
 date:   2018-01-01 16:16:01 -0800
 categories: jekyll
+tags: jekyll github-page
 ---
 
 # Blogging on GitHub Page
@@ -19,7 +20,7 @@ categories: jekyll
 
 [YAML](https://yaml.org/) [Front Matter](https://jekyllrb.com/docs/front-matter/) is used to configure the posts and pages.
 
-[permanent links](https://jekyllrb.com/docs/permalinks/) is used to instruct how the urls are generated.
+[Permanent links](https://jekyllrb.com/docs/permalinks/) is used to instruct how the urls are generated.
 
 [Default github page Themes](https://pages.github.com/themes/) has built-in features and you still can [customize CSS and HTML in themes](https://help.github.com/articles/customizing-css-and-html-in-your-jekyll-theme/).
 
@@ -33,7 +34,7 @@ Curly braces and percent signs create the logic and control flow for templates.
 
 [More control flows](http://shopify.github.io/liquid/tags/control-flow/)
 
-"|" add filter support. For example, `[storm troop cat]({{ "/assets/imgs/storm_troop_cat.jpg" | absolute_url }})` produces `https://givemepower8.github.io/assets/imgs/storm_troop_cat.jpg`
+"|" add filter support.
 
 [Standard Liquid filters](https://jekyllrb.com/docs/liquid/filters/#standard-liquid-filters)
 
