@@ -29,7 +29,7 @@ categories: jekyll
 
 Liquid use `{{ }}` template syntax to render content.
 
-Curly braces and percent signs: {% ... %} create the logic and control flow for templates
+Curly braces and percent signs: `{% %}` create the logic and control flow for templates
 
 ```liquid
 {% if user %}
