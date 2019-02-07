@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Second Test
-subtitle: How to use GitHub Pages
+subtitle: this is the second test
 date:   2018-02-01 19:16:01 -0800
 categories: [jekyll, test]
 excerpt: this is the second test
