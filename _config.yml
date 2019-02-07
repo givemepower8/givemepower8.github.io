@@ -9,3 +9,7 @@ twitter_username: givemepower8
 github_username:  givemepower8
 
 show_excerpts: true # set to false to remove excerpts on the homepage
+
+sass:
+  sass_dir: _sass
+  style: compact
