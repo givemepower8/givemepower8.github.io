@@ -23,6 +23,14 @@ categories: jekyll
 
 ### | Filter
 
+[Standard Liquid filters](https://jekyllrb.com/docs/liquid/filters/#standard-liquid-filters)
+
+[Liquid](https://shopify.github.io/liquid/filters)
+
+[Liquid more](https://help.shopify.com/en/themes/liquid)
+
+[Jekyll Liquid filters](https://jekyllrb.com/docs/liquid/filters/)
+
 `[storm troop cat]({{ "/assets/imgs/storm_troop_cat.jpg" | absolute_url }})`
 produces
 `https://givemepower8.github.io/assets/imgs/storm_troop_cat.jpg`
@@ -34,4 +42,3 @@ produces
 [GitHub Pages Learning Lab](https://lab.github.com/githubtraining/github-pages)
 
 [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
-
