@@ -58,6 +58,8 @@ Curly braces and percent signs create the logic and control flow for templates.
 
 [Jekyll Liquid filters](https://jekyllrb.com/docs/liquid/filters/)
 
+[https://www.siteleaf.com/blog/tags/liquid/](https://www.siteleaf.com/blog/tags/liquid/)
+
 ### Bloggers use GitHub Pages
 
 [http://longqian.me](https://github.com/qian256/qian256.github.io)
