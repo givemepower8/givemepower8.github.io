@@ -19,6 +19,14 @@ categories: jekyll
 
 [permanent links](https://jekyllrb.com/docs/permalinks/)
 
+## Liquid
+
+### | Filter
+
+`[storm troop cat]({{ "/assets/imgs/storm_troop_cat.jpg" | absolute_url }})`
+produces
+`https://givemepower8.github.io/assets/imgs/storm_troop_cat.jpg`
+
 ## GitHub Pages
 
 >GitHub Pages is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository.
@@ -27,4 +35,3 @@ categories: jekyll
 
 [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
-[storm troop cat]({{ "/assets/imgs/storm_troop_cat.jpg" | absolute_url }})
