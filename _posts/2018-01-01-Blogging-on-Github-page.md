@@ -33,7 +33,7 @@ Curly braces and percent signs create the logic and control flow for templates.
 
 [More control flows](http://shopify.github.io/liquid/tags/control-flow/)
 
-"|" add filter support.
+"\|" add filter support.
 
 [Standard Liquid filters](https://jekyllrb.com/docs/liquid/filters/#standard-liquid-filters)
 
@@ -50,3 +50,11 @@ Curly braces and percent signs create the logic and control flow for templates.
 [GitHub Pages Learning Lab](https://lab.github.com/githubtraining/github-pages)
 
 [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
+
+### Bloggers use GitHub Page
+
+[longqian.me](https://github.com/qian256/qian256.github.io)
+
+[www.minddust.com](https://github.com/minddust/minddust.github.io)
+
+[codinfox.github.io](https://github.com/codinfox/codinfox-lanyon)
