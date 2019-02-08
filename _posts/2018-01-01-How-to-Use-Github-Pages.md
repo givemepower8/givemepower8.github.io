@@ -70,6 +70,10 @@ Liquid supports [control flows](http://shopify.github.io/liquid/tags/control-flo
 
 [https://www.siteleaf.com/blog/tags/liquid/](https://www.siteleaf.com/blog/tags/liquid/)
 
+### Some other useful features
+
+[Adding Search to Jekyll on Github Pages](https://flybase.io/2015/09/05/adding-search-to-jekyll-on-github-pages/)
+
 ### Bloggers use GitHub Pages
 
 [http://longqian.me](https://github.com/qian256/qian256.github.io)
