@@ -19,6 +19,8 @@ tags: [DevTools, VSCode, ECMAScript, Python, AspDotNetCore]
 
 ## Editor
 
+Settings can be accessed via menu File->Preferences->Settings->User Settings / Workspace Settings->Text Editor.
+
 [tips-and-tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
 * Ctrl + b => Toggle Sidebar

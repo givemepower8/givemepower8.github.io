@@ -1,90 +1,103 @@
 ﻿<!DOCTYPE html>
 <html lang='{{ site.lang | default: "en-US" }}'>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    {% seo %}
-    <link rel="stylesheet" href='{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}'>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href='{{ "/assets/css/main.css?v=" | append: site.github.build_revision | relative_url }}'>
-  </head>
-  <body>
-  
-    {% include navigation.html %}
 
-    {% include header.html %}
-  
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div id="mainContent" class="col-lg-8 col-md-10 mx-auto">
-          {{ content }}          
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href='{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}'>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href='{{ "/assets/css/main.css?v=" | append: site.github.build_revision | relative_url }}'>
+</head>
+
+<body>
+
+  {% include navigation.html %}
+
+  {% include header.html %}
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div id="mainContent" class="col-lg-8 col-md-10 mx-auto">
+        {{ content }}
       </div>
     </div>
-  
-    <hr>
-  
-    {% include footer.html %}
-    
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+  </div>
 
-    <script>
-      (function($) {
-        "use strict"; // Start of use strict
+  <hr>
 
-        // Floating label headings for the contact form
-        $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-          $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-        }).on("focus", ".floating-label-form-group", function() {
-          $(this).addClass("floating-label-form-group-with-focus");
-        }).on("blur", ".floating-label-form-group", function() {
-          $(this).removeClass("floating-label-form-group-with-focus");
-        });
+  {% include footer.html %}
 
-        // Show the navbar when the page is scrolled up
-        var MQL = 992;
+  {% if site.google_analytics %}
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
+    crossorigin="anonymous"></script>
 
-        //primary navigation slide-in effect
-        if ($(window).width() > MQL) {
-          var headerHeight = $('#mainNav').height();
-          $(window).on('scroll', {
-              previousTop: 0
-            },
-            function() {
-              var currentTop = $(window).scrollTop();
-              //check if user is scrolling up
-              if (currentTop < this.previousTop) {
-                //if scrolling up...
-                if (currentTop > 0 && $('#mainNav').hasClass('is-fixed')) {
-                  $('#mainNav').addClass('is-visible');
-                } else {
-                  $('#mainNav').removeClass('is-visible is-fixed');
-                }
-              } else if (currentTop > this.previousTop) {
-                //if scrolling down...
-                $('#mainNav').removeClass('is-visible');
-                if (currentTop > headerHeight && !$('#mainNav').hasClass('is-fixed')) $('#mainNav').addClass('is-fixed');
+  <script>
+    (function ($) {
+      "use strict"; // Start of use strict
+
+      // Floating label headings for the contact form
+      $("body").on("input propertychange", ".floating-label-form-group", function (e) {
+        $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+      }).on("focus", ".floating-label-form-group", function () {
+        $(this).addClass("floating-label-form-group-with-focus");
+      }).on("blur", ".floating-label-form-group", function () {
+        $(this).removeClass("floating-label-form-group-with-focus");
+      });
+
+      // Show the navbar when the page is scrolled up
+      var MQL = 992;
+
+      //primary navigation slide-in effect
+      if ($(window).width() > MQL) {
+        var headerHeight = $('#mainNav').height();
+        $(window).on('scroll', {
+            previousTop: 0
+          },
+          function () {
+            var currentTop = $(window).scrollTop();
+            //check if user is scrolling up
+            if (currentTop < this.previousTop) {
+              //if scrolling up...
+              if (currentTop > 0 && $('#mainNav').hasClass('is-fixed')) {
+                $('#mainNav').addClass('is-visible');
+              } else {
+                $('#mainNav').removeClass('is-visible is-fixed');
               }
-              this.previousTop = currentTop;
-            });
-        }
+            } else if (currentTop > this.previousTop) {
+              //if scrolling down...
+              $('#mainNav').removeClass('is-visible');
+              if (currentTop > headerHeight && !$('#mainNav').hasClass('is-fixed')) $('#mainNav').addClass(
+                'is-fixed');
+            }
+            this.previousTop = currentTop;
+          });
+      }
 
-      })(jQuery); // End of use strict
+    })(jQuery); // End of use strict
+  </script>
+</body>
 
-    </script>
-  </body>
 </html>
