@@ -3,6 +3,7 @@
         "crossorigin",
         "gulpfile",
         "imgs",
-        "pageview"
+        "pageview",
+        "replyto"
     ]
 }
