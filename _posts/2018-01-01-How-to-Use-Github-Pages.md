@@ -8,8 +8,6 @@ tags: [jekyll, GithubPages]
 ---
 # How to use GitHub Pages
 
-Best ways to learn is to practice, write and teach.
-
 >[GitHub Pages](https://pages.github.com/) is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository.
 
 To me, GitHub Pages is the perfect place to jog down all the technical notes in my lifelong learning process.
@@ -18,11 +16,13 @@ Some benefits I can think of:
 
 * Markdown syntax helps to focus on the documentation structure and content writing
   * use headings can greatly organize the topic
-  * the content is not mixed with html tags
+  * the content is not mixed with html tags and formatting
   * best versioning of the documentation
 * Jekyll and Liquid are great engines for the web pages
   * tags, categories in Front Matter are great
   * posts, pages, and paging support
+  * static web pages generated with clean html boost performance
+  * built-in plugs do lots of heavy-lifting work
 
 The following is the list of some good resources to start off the pages.
 
@@ -32,7 +32,7 @@ The following is the list of some good resources to start off the pages.
 
 [Using a custom domain with GitHub Pages](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 
-To write the posts, place the new blog posts into the _posts folder. Jekyll templating engine has strict naming rules. The names of the blog posts need to use the following naming convention: `year-month-date-{slug}.md`
+Once the basic pages are in place, you can start to write the posts by placing the new blog posts into the _posts folder. Jekyll templating engine has strict naming rules. The names of the blog posts need to use the following naming convention: `year-month-date-{slug}.md`
 
 ## Jekyll
 
