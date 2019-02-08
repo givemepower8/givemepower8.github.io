@@ -6,8 +6,8 @@ layout: default
   {{content}}
 </div>
 
-<p class="view">by {{ page.author | default: site.author }} on {{ page.date | date: "%b %d, %Y" }}</p>
-
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
 {% endif %}
+
+<p class="view">by {{ page.author | default: site.author }} on {{ page.date | date: "%b %d, %Y" }}</p>
