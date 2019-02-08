@@ -4,6 +4,7 @@
         "gulpfile",
         "imgs",
         "pageview",
-        "replyto"
+        "replyto",
+        "templating"
     ]
 }
