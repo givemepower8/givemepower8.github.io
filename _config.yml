@@ -5,6 +5,8 @@ author: Wei Wang
 description: Learn cutting-edge technologies with me
 excerpt_separator: <!--more-->
 
+permalink: /:categories/:title/
+
 # social links
 twitter_username: givemepower8
 github_username:  givemepower8

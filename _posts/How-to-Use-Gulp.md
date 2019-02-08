@@ -3,8 +3,8 @@ layout: post
 title:  How to use gulp
 subtitle: How to use gulp
 date:   2018-03-01 06:21:11 -0800
-categories: [Dev Tools, Gulp]
-tags: [Dev Tools, Gulp]
+categories: [DevTools, Gulp]
+tags: [DevTools, Gulp]
 ---
 # How to use gulp
 

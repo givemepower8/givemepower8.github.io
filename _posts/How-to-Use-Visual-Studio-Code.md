@@ -3,8 +3,8 @@ layout: post
 title:  Visual Studio Code
 subtitle: How to use Visual Studio Code
 date:   2018-02-01 19:16:01 -0800
-categories: [Dev Tools, Web]
-tags: [Dev Tools, VS Code]
+categories: [DevTools]
+tags: [DevTools, VSCode, ECMAScript, Python, AspDotNetCore]
 ---
 
 # Visual Studio Code
