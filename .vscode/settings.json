@@ -4,6 +4,8 @@
         "expressjs",
         "gulpfile",
         "imgs",
+        "linq",
+        "mern",
         "pageview",
         "replyto",
         "templating"
