@@ -1,30 +1,36 @@
 // Styling for the post page
 .post-preview {
-  > a {
+  >a {
     color: $gray-900;
+
     &:focus,
     &:hover {
       text-decoration: none;
       color: $primary;
     }
-    > .post-title {
+
+    >.post-title {
       font-size: 30px;
       margin-top: 30px;
       margin-bottom: 10px;
     }
-    > .post-subtitle {
+
+    >.post-subtitle {
       font-weight: 300;
       margin: 0 0 10px;
     }
   }
-  > .post-meta {
+
+  >.post-meta {
     font-size: 18px;
     font-style: italic;
     margin-top: 0;
     color: $gray-600;
-    > a {
+
+    >a {
       text-decoration: none;
       color: $gray-900;
+
       &:focus,
       &:hover {
         text-decoration: underline;
@@ -32,9 +38,10 @@
       }
     }
   }
+
   @media only screen and (min-width: 768px) {
-    > a {
-      > .post-title {
+    >a {
+      >.post-title {
         font-size: 36px;
       }
     }
@@ -43,4 +50,5 @@
 
 #postContent a {
   text-decoration: none;
+  color: #008080
 }
