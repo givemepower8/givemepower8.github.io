@@ -2,13 +2,11 @@
 layout: default
 ---
 
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
-
-<p class="view">by {{ page.author | default: site.author }}</p>
-
 <div id="postContent">
   {{content}}
 </div>
+
+<p class="view">by {{ page.author | default: site.author }} on {{ page.date | date: "%b %d, %Y" }}</p>
 
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
