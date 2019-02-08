@@ -60,11 +60,9 @@ Curly braces and percent signs create the logic and control flow for templates.
 
 Liquid supports [control flows](http://shopify.github.io/liquid/tags/control-flow/) which is often used with site.* variables.
 
-"\|" add filter support inside the curly braces.
+[Liquid filters](https://shopify.github.io/liquid/filters) add chaining functionalities inside the curly braces.
 
 [Standard Liquid filters](https://jekyllrb.com/docs/liquid/filters/#standard-liquid-filters)
-
-[Liquid filters](https://shopify.github.io/liquid/filters)
 
 [Liquid more](https://help.shopify.com/en/themes/liquid)
 
