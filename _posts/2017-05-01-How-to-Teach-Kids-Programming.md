@@ -35,9 +35,31 @@ Programming is about solving problems effectively and efficiently.
   * while true
   * keyboard and mouse related
 
+### Primitive types
+
+#### boolean
+
+and operator
+
+or operator
+
+#### number
+
+##### integer
+
+##### float
+
+#### string
+
+##### substring
+
+##### pattern match
+
+##### diff
+
 ### Array
 
-A shelf of boxes (variables). The boxes usually hold the same type of value.
+A shelf of boxes (variables). The boxes usually hold the same type of value. Array provides great support to other data structures.
 
 [Python arrays](https://knaidu.gitbooks.io/problem-solving/arrays/)
 
@@ -74,12 +96,18 @@ Why do we need sorted items:
 * Priority queue and Heap
 * O(n) get distinct values
 
+### List and custom collections
+
+The size of array in some languages like C# is fixed. List is built upon array with auto-adjusted size.
+
 ### Symbol table
 
-Symbol table is also known as associative array, map or dictionary, it is an abstract collection type to store items. Each item is associated with a single key with a value.
+Symbol table is also known as associative array, map or dictionary, it is an abstract collection type to store items.
+
+The index in a list is automatically incremented. For symbol table, each item is associated with a single key with a value and caller needs to specify the key.
 
 ```CSharp
-list.Add(item);
+list.Add(value);
 
 dictionary.Add(key, value);
 ```
@@ -87,6 +115,10 @@ dictionary.Add(key, value);
 Instead of using index, a unique key is used to locate the item in the container. If the caller puts a key-value pair into a table already containing that key (and an associated value), the new value replaces the old one.
 
 Only one value is associated with each key as there is no duplicate keys in the container.
+
+### Linked list
+
+Linked list has no index of the items. Each item is a node in the linked list which has a next property instead of index.
 
 ## Beyond the basics
 
