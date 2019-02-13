@@ -114,6 +114,10 @@ Instead of using index, a unique key is used to locate the item in the container
 
 Only one value is associated with each key as there is no duplicate keys in the container.
 
+#### Hash function
+
+[Hash function](https://en.wikipedia.org/wiki/Hash_function)
+
 ### Linked list
 
 Linked list has no index of the items. Each item is a node in the linked list which has a next property instead of index.
