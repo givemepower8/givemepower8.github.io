@@ -26,7 +26,7 @@ Programming is about solving problems effectively and efficiently.
   * switch
   * do while / while do
   * continue and break in iteration
-  * return in none void function
+  * return and void
 * Functions
   * named or anonymous (lambda)
   * parameters (definition) and arguments (passed-in)
@@ -60,8 +60,6 @@ or operator
 ### Array
 
 A shelf of boxes (variables). The boxes usually hold the same type of value. Array provides great support to other data structures.
-
-[Python arrays](https://knaidu.gitbooks.io/problem-solving/arrays/)
 
 * Instantiation
 * Index and items
