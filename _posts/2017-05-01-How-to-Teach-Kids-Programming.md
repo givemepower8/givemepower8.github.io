@@ -8,6 +8,8 @@ tags: [Problem Solving]
 ---
 # How to Teach Kids Programming
 
+Programming is about solving problems effectively and efficiently.
+
 ## Basic Programming Constructs
 
 * Variables
@@ -42,8 +44,8 @@ A shelf of boxes (variables). The boxes usually hold the same type of value.
 * Instantiation
 * Index and items
 * Add and remove items
-  * Queue and stack
-  * Combine
+  * first and last (Queue and stack)
+  * inline at specified index
 * Iteration
   * value lookup
     * value exists
@@ -52,13 +54,17 @@ A shelf of boxes (variables). The boxes usually hold the same type of value.
     * count, sum, avg, median
   * Inline item exchange
     * Partitioning
-  * Sorting
+  * Basic Sorting
     * [Insertion](https://en.wikipedia.org/wiki/Insertion_sort)
     * [Selection](https://en.wikipedia.org/wiki/Selection_sort)
     * [Bubble](https://en.wikipedia.org/wiki/Bubble_sort)
   * Projection
     * Distinct
     * Grouping
+  * Set, usually two arrays, each array holds distinct values
+    * Union
+    * Except
+    * Intersection  
 
 #### Sorted Array
 
@@ -66,8 +72,13 @@ Why do we need sorted items:
 
 * Binary Search
 * Priority queue and Heap
+* O(n) get distinct values
 
 ## Beyond the basics
+
+### Bits
+
+### Numbers
 
 ## Mastery
 
