@@ -67,9 +67,10 @@ A shelf of boxes (variables). The boxes usually hold the same type of value. Arr
   * first and last (Queue and stack)
   * inline at specified index
 * Iteration
-  * value lookup
-    * value exists
-    * max or min value
+  * Value / reference lookup and comparison
+    * reference exists
+    * value comparison
+      * max or min value
   * Aggregation
     * count, sum, avg, median
   * Inline item exchange
@@ -84,7 +85,8 @@ A shelf of boxes (variables). The boxes usually hold the same type of value. Arr
   * Set, usually two arrays, each array holds distinct values
     * Union
     * Except
-    * Intersection  
+    * Intersection
+  * Copy array
 
 #### Sorted Array
 
@@ -97,6 +99,8 @@ Why do we need sorted items:
 ### List and custom collections
 
 The size of array in some languages like C# is fixed. List is built upon array with auto-adjusted size.
+
+Resize
 
 ### Symbol table
 
@@ -112,7 +116,13 @@ dictionary.Add(key, value);
 
 Instead of using index, a unique key is used to locate the item in the container. If the caller puts a key-value pair into a table already containing that key (and an associated value), the new value replaces the old one.
 
-Only one value is associated with each key as there is no duplicate keys in the container.
+Only one value or collection is associated with each key as there is no duplicate keys in the container.
+
+#### Why Symbol table
+
+* Occurrence count
+* Caching
+* Memorization
 
 #### Hash function
 
@@ -120,7 +130,9 @@ Only one value is associated with each key as there is no duplicate keys in the 
 
 ### Linked list
 
-Linked list has no index of the items. Each item is a node in the linked list which has a next property instead of index.
+Linked list has no index of the items. Each item is a node in the linked list which has a `next` property instead of index.
+
+While you are iterating a list, you are not supposed to add and remove items to the list. But in a linked list, you can manipulate the current node.
 
 ## Beyond the basics
 
@@ -133,6 +145,14 @@ Linked list has no index of the items. Each item is a node in the linked list wh
 ### Recursion
 
 ## Problem Solving
+
+### Solution
+
+Time complexity
+
+Space complexity
+
+for example, permutation
 
 [Tutorials and Practice Problems](https://www.hackerearth.com/practice/)
 
