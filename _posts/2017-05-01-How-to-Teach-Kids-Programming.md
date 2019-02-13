@@ -74,6 +74,20 @@ Why do we need sorted items:
 * Priority queue and Heap
 * O(n) get distinct values
 
+### Symbol table
+
+Symbol table is also known as associative array, map or dictionary, it is an abstract collection type to store items. Each item is associated with a single key with a value.
+
+```CSharp
+list.Add(item);
+
+dictionary.Add(key, value);
+```
+
+Instead of using index, a unique key is used to locate the item in the container. If the caller puts a key-value pair into a table already containing that key (and an associated value), the new value replaces the old one.
+
+Only one value is associated with each key as there is no duplicate keys in the container.
+
 ## Beyond the basics
 
 ### Bits
@@ -82,6 +96,10 @@ Why do we need sorted items:
 
 ## Mastery
 
+### Recursion
+
 ## Problem Solving
 
 [Tutorials and Practice Problems](https://www.hackerearth.com/practice/)
+
+### Divide and conquer
