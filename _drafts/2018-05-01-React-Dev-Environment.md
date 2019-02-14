@@ -13,6 +13,8 @@ tags: [React]
 
 [create-react-app](https://github.com/facebook/create-react-app) is a global command-line utility to create new projects.
 
+[Getting Started](https://facebook.github.io/create-react-app/docs/getting-started)
+
 ## StoryBook
 
 [StoryBook](https://storybook.js.org/basics/introduction/)
