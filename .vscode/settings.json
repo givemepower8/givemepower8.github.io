@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
+        "bivariance",
         "chaijs",
+        "contravariance",
         "crossorigin",
         "deserialize",
         "devdocs",
@@ -8,16 +10,20 @@
         "gitignore",
         "gulpfile",
         "hotfix",
+        "iife",
         "imgs",
+        "invokation",
         "linq",
         "mern",
         "mingw",
         "minification",
+        "mixins",
         "mjavascript",
         "namespacing",
         "nextjs",
         "pageview",
         "pluggable",
+        "pluralsight",
         "polyfill",
         "polyfills",
         "preprocessors",
@@ -33,6 +39,7 @@
         "transpiles",
         "transpiling",
         "tsify",
+        "typedoc",
         "zakas"
     ],
     "editor.formatOnSave": true
