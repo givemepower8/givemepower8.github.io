@@ -13,7 +13,7 @@ Solve the problems without any support from any libraries.
 Common tactics:
 
 * brute force
-  * iteration and trial and error
+  * iteration and trial-and-error
   * guided permutation
   * guided combination
 * introduce in temporary variable
@@ -29,11 +29,11 @@ Find the max value inside the array, input an array of integers, output is the i
 Find the min value inside the array, input an array of integers, output is the index of first min value.
 , i.e., for an array [7,4,3,9,1,8,0,2,5,6], should return 6 as a[6]=0
 
-Reverse an array
+Reverse an array, input: [1,2,3,4], output: [4,3,2,1]
 
-Left shift an array
+Left shift an array, input: [1,2,3,4], output: [2,3,4,1]
 
-Right shift an array
+Right shift an array, input: [1,2,3,4], output: [4,1,2,3]
 
 Reshuffle an array
 
