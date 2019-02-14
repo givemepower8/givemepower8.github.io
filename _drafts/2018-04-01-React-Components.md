@@ -175,7 +175,8 @@ Context id shared by different components, usually we pass props in the componen
 
 ### Lifecycle
 
-http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+[react-lifecycle-methods-diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+
 Mounting
 
 Updating
