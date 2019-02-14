@@ -8,6 +8,7 @@
         "devdocs",
         "divs",
         "expressjs",
+        "formik",
         "gitignore",
         "gulpfile",
         "hotfix",
@@ -29,6 +30,7 @@
         "polyfill",
         "polyfills",
         "preprocessors",
+        "reactjs",
         "readline",
         "reddit",
         "replyto",
@@ -42,6 +44,7 @@
         "transpiling",
         "tsify",
         "typedoc",
+        "unmounting",
         "zakas"
     ],
     "editor.formatOnSave": true

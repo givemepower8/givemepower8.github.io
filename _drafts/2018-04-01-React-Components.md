@@ -32,6 +32,8 @@ Some benefits of components:
 
 ## How to write components
 
+[react-component](https://reactjs.org/docs/react-component.html)
+
 Components are UIs with programmable props and states.
 
 Virtually, components are like div elements or other container elements. Usually all the components are in one app component, like the DOM tree structure, components can have parent, ancestors, children, descendants, siblings, etc,. App component is the root.
@@ -120,6 +122,8 @@ When a component's state data changes, the rendered html markup will be updated 
 
 In practice, most React apps only call ReactDOM.render() once.
 
+### props
+
 props are parameter which takes in the arguments from JSX.
 
 ```js
@@ -133,7 +137,7 @@ ReactDOM.render(element, document.getElementById('root'));
 
 [render-props](https://reactjs.org/docs/render-props.html)
 
-state
+### state
 
 [state-and-lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
@@ -143,9 +147,81 @@ setState({…})
 
 ### constructor
 
+### Collection
+
+#### map
+
+#### key
+
+### Validation
+
+#### PropTypes
+
+### pass data between components
+
+#### Context
+
+[Context](https://reactjs.org/docs/context.html)
+
+Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language.
+
+Context id shared by different components, usually we pass props in the component hierarchy, but for some concept like theme, sign-in, toaster, etc., those ones can be accessed by any component by context.
+
+#### parent -> child
+
+#### child -> parent
+
+### Component lifecycle
+
+### Lifecycle
+
+http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+Mounting
+
+Updating
+
+Unmounting
+
+### Error Handling
+
+[Error Handling](https://reactjs.org/docs/error-boundaries.html)
+
+## Form
+
+[formik](https://jaredpalmer.com/formik)
+
 ## Events
 
 ## Timers
+
+```js
+class Timer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { seconds: 0 };
+  }
+
+  tick() {
+    this.setState(state => ({
+      seconds: state.seconds + 1
+    }));
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.tick(), 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render() {
+    return <div>Seconds: {this.state.seconds}</div>;
+  }
+}
+
+ReactDOM.render(<Timer />, mountNode);
+```
 
 ## AJAX
 
@@ -158,3 +234,7 @@ setState({…})
 ## Resources
 
 [nextjs](https://nextjs.org/learn)
+
+### Examples
+
+[vscode-react-sample](https://github.com/Microsoft/vscode-react-sample)

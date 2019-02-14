@@ -18,3 +18,11 @@ tags: [React]
 ## StoryBook
 
 [StoryBook](https://storybook.js.org/basics/introduction/)
+
+## React Developer Tools
+
+[react developer tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+## Visual Studio Code Support
+
+[reactjs-tutorial](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
