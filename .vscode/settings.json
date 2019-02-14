@@ -1,14 +1,32 @@
 {
     "cSpell.words": [
         "crossorigin",
+        "devdocs",
         "expressjs",
         "gulpfile",
         "imgs",
         "linq",
         "mern",
+        "minification",
+        "mjavascript",
+        "namespacing",
+        "nextjs",
         "pageview",
+        "pluggable",
+        "polyfill",
+        "polyfills",
+        "preprocessors",
+        "readline",
         "replyto",
-        "templating"
+        "templating",
+        "transpilation",
+        "transpiled",
+        "transpiler",
+        "transpilers",
+        "transpiles",
+        "transpiling",
+        "tsify",
+        "zakas"
     ],
     "editor.formatOnSave": true
 }
