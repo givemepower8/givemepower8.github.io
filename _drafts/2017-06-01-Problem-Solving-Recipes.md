@@ -10,10 +10,15 @@ tags: [Problem Solving]
 
 Solve the problems without any support from any libraries.
 
-* brute force, iteration and trial and error
+Common tactics:
+
+* brute force
+  * iteration and trial and error
+  * guided permutation
+  * guided combination
 * introduce in temporary variable
+  * dynamic programming
 * inline processing
-* permutation, combination more space consuming
 
 ## Array
 

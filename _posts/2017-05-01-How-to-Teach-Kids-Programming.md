@@ -86,6 +86,10 @@ A shelf of boxes (variables). The boxes usually hold the same type of value. Arr
     * Union
     * Except
     * Intersection
+  * Sub array
+    * permutation
+    * combination
+    * sequential equal
   * Copy array
 
 #### Sorted Array
