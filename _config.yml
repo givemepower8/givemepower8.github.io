@@ -5,9 +5,12 @@ excerpt_separator: <!--more-->
 
 permalink: /:categories/:title/
 
-# social links
+# Pagination
+# paginate: 5
+
+# Social links
 twitter_username: givemepower8
-github_username:  givemepower8
+github_username: givemepower8
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
