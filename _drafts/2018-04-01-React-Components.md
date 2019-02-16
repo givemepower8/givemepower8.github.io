@@ -34,26 +34,21 @@ Some benefits of components:
 
 [react-component](https://reactjs.org/docs/react-component.html)
 
-Components are UIs with programmable props and states.
+Components are UIs with programmable props, states, events and more.
 
-Virtually, components are like div elements or other container elements. Or you can think that an app consists of header component, sidebar component, content component, etc.,. Usually all the components are in one app component, like the DOM tree structure, components can have parent, ancestors, children, descendants, siblings, etc,. App component is the root.
+Virtually, components are like div elements or other container elements. Or you can think that an app component consists of header component, navigation component, sidebar component, content component, etc.,. Usually all the components are in one app component, like the DOM tree structure, each component can have one parent, ancestors, children, descendants, siblings, etc,. App component is the root.
 
-Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called "props") and return React elements describing what should appear on the screen.
+Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called "props") and return React elements rendering on the screen.
 
 ```js
 var Hello = function(props) {
-  render() {
-    return <div>Hello {props.toWho}</div>;
-  }
-}
+  return <div>Hello {props.toWho}</div>;
+};
 
-ReactDOM.render(
-  <Hello toWho="World" />,
-  document.getElementById('root')
-);
+ReactDOM.render(<Hello toWho="World" />, document.getElementById("root"));
 ```
 
-The above is known as function components which can be written in ECMAScript 6 class component which inherited from React.Component as following.
+The above is known as functional components which can be written in ECMAScript 6 class-based component which inherited from React.Component as following.
 
 ```js
 class Hello extends React.Component {
@@ -65,9 +60,9 @@ class Hello extends React.Component {
 ReactDOM.render(<Hello toWho="World" />, document.getElementById("root"));
 ```
 
-Function components are the best components when it comes to reusability because they are pure function with no state. They are predictable—the same input will always give us the same output.
+Functional components are the best components when it comes to reusability because they are pure function with no state. They are very predictable as the same input will always give us the same output.
 
-React.Component has its life cycle and has constructor, properties and methods:
+But sometimes you need state inside the component, class-based component or React.Component supports state and it has its life cycle and has constructor, properties and methods:
 
 - Class Properties
   - defaultProps
@@ -86,6 +81,8 @@ React.Component has its life cycle and has constructor, properties and methods:
 [jsx-in-depth](https://reactjs.org/docs/jsx-in-depth.html)
 
 [react-without-jsx](https://reactjs.org/docs/react-without-jsx.html)
+
+JSX is html you directly write in JavaScript, return block in functional components and render method in class-based component.
 
 ```js
 class HelloMessage extends React.Component {
@@ -112,13 +109,7 @@ ReactDOM.render(
 );
 ```
 
-Like XAML in the .net world, jsx enables html tags can be written directly in the code.
-
 ### ReactDOM.render
-
-In addition to taking input data (accessed via this.props), a component can maintain internal state data (accessed via this.state).
-
-When a component's state data changes, the rendered html markup will be updated by re-invoking render().
 
 In practice, most React apps only call ReactDOM.render() once.
 
@@ -137,7 +128,23 @@ const element = <Welcome name="Sara" />;
 ReactDOM.render(element, document.getElementById("root"));
 ```
 
-#### collection mapping
+### state
+
+Props takes input data to initialize the component, a component can maintain internal state data, accessed via this.state.
+
+When a component's state data changes, the rendered html markup will be updated by re-invoking render().
+
+[state-and-lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+
+[lifting-state-up](https://reactjs.org/docs/lifting-state-up.html)
+
+#### setState()
+
+### constructor
+
+### Collection
+
+#### map
 
 ```js
 function People(props) {
@@ -160,24 +167,10 @@ function Person(props) {
   );
 }
 
-const people = [{ name: "Max", age: "28" }, { name: "Manu", age: "29" }];
+const people = [{ name: "Max", age: "28" }, { name: "Tom", age: "29" }];
 
 ReactDOM.render(<People people={people} />, document.getElementById("root"));
 ```
-
-### state
-
-[state-and-lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
-
-[lifting-state-up](https://reactjs.org/docs/lifting-state-up.html)
-
-setState({…})
-
-### constructor
-
-### Collection
-
-#### map
 
 #### key
 
@@ -191,7 +184,7 @@ setState({…})
 
 [Context](https://reactjs.org/docs/context.html)
 
-Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language.
+Context is designed to share data that can be considered "global" for a tree of React components, such as the current authenticated user, theme, or preferred language.
 
 Context id shared by different components, usually we pass props in the component hierarchy, but for some concept like theme, sign-in, toaster, etc., those ones can be accessed by any component by context.
 
