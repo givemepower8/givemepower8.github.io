@@ -36,7 +36,7 @@ Some benefits of components:
 
 Components are UIs with programmable props and states.
 
-Virtually, components are like div elements or other container elements. Usually all the components are in one app component, like the DOM tree structure, components can have parent, ancestors, children, descendants, siblings, etc,. App component is the root.
+Virtually, components are like div elements or other container elements. Or you can think that an app consists of header component, sidebar component, content component, etc.,. Usually all the components are in one app component, like the DOM tree structure, components can have parent, ancestors, children, descendants, siblings, etc,. App component is the root.
 
 Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called "props") and return React elements describing what should appear on the screen.
 
@@ -62,7 +62,7 @@ class Hello extends React.Component {
   }
 }
 
-ReactDOM.render(<Hello toWho="World" />, document.getElementById('root'));
+ReactDOM.render(<Hello toWho="World" />, document.getElementById("root"));
 ```
 
 Function components are the best components when it comes to reusability because they are pure function with no state. They are predictable—the same input will always give us the same output.
@@ -102,12 +102,12 @@ The above is transpiled to the following:
 ```js
 class HelloMessage extends React.Component {
   render() {
-    return React.createElement('div', null, 'Hello ', this.props.name);
+    return React.createElement("div", null, "Hello ", this.props.name);
   }
 }
 
 ReactDOM.render(
-  React.createElement(HelloMessage, { name: 'Taylor' }),
+  React.createElement(HelloMessage, { name: "Taylor" }),
   mountNode
 );
 ```
@@ -124,7 +124,9 @@ In practice, most React apps only call ReactDOM.render() once.
 
 ### props
 
-props are parameter which takes in the arguments from JSX.
+props are parameter which takes in the arguments from JSX. The props are mapped to the attributes inside the component tags.
+
+[render-props](https://reactjs.org/docs/render-props.html)
 
 ```js
 function Welcome(props) {
@@ -132,10 +134,36 @@ function Welcome(props) {
 }
 
 const element = <Welcome name="Sara" />;
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(element, document.getElementById("root"));
 ```
 
-[render-props](https://reactjs.org/docs/render-props.html)
+#### collection mapping
+
+```js
+function People(props) {
+  return (
+    <div>
+      {props.people.map((person, index) => (
+        <Person key={index} person={person} />
+      ))}
+    </div>
+  );
+}
+
+function Person(props) {
+  const person = props.person;
+  return (
+    <div className="person">
+      <h1>{person.name}</h1>
+      <p>Your Age: {person.age}</p>
+    </div>
+  );
+}
+
+const people = [{ name: "Max", age: "28" }, { name: "Manu", age: "29" }];
+
+ReactDOM.render(<People people={people} />, document.getElementById("root"));
+```
 
 ### state
 
@@ -186,6 +214,10 @@ Unmounting
 ### Error Handling
 
 [Error Handling](https://reactjs.org/docs/error-boundaries.html)
+
+## Styling
+
+className
 
 ## Form
 
@@ -239,3 +271,7 @@ ReactDOM.render(<Timer />, mountNode);
 ### Examples
 
 [vscode-react-sample](https://github.com/Microsoft/vscode-react-sample)
+
+[ReactJS-burger-builder](https://codesandbox.io/s/github/Deepak2607/ReactJS-burger-builder/tree/master/)
+
+[burger-builder-react](https://github.com/kinny94/burger-builder-react)
