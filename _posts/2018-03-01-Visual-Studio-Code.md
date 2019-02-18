@@ -42,9 +42,13 @@ To switch between views, press Ctrl+Shift+V in the editor. You can view the prev
 
 ### Emmet
 
+[Emmet](https://emmet.io/) is the successor of HTML zen coding which saves tedious type for coding html, css.
+
 [emmet](https://code.visualstudio.com/docs/editor/emmet)
 
 [emmet-2.0](https://code.visualstudio.com/blogs/2017/08/07/emmet-2.0)
+
+[emmet cheat sheet](https://docs.emmet.io/cheat-sheet/)
 
 ## Commands
 

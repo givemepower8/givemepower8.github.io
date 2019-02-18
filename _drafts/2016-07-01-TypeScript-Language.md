@@ -49,8 +49,6 @@ let, const, var
 
 ## Array / Collection
 
-[array in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-
 Iterators
 
 Generators
