@@ -268,8 +268,3 @@ ReactDOM.render(<Timer />, mountNode);
 - burger builder
   - [ReactJS-burger-builder](https://codesandbox.io/s/github/Deepak2607/ReactJS-burger-builder/tree/master/)
   - [burger-builder-react](https://github.com/kinny94/burger-builder-react)
-- Chess
-  - [chess.js](https://github.com/jhlywa/chess.js/)
-    - [https://chessboardjsx.com](https://chessboardjsx.com/)
-  - [React Chess](https://www.techighness.com/post/develop-two-player-chess-game-with-react-js/)
-  - [building-a-real-time-chess-game-with-react-and-firebase](https://appendto.com/2017/04/building-a-realtime-chess-game-with-react-and-firebase/)
