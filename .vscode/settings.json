@@ -47,6 +47,7 @@
         "typedoc",
         "unmount",
         "unmounting",
+        "unshift",
         "zakas"
     ],
     "editor.formatOnSave": true
