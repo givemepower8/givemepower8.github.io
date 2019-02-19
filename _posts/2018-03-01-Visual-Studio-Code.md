@@ -21,26 +21,23 @@ tags: [DevTools, VSCode, ECMAScript, Python, AspDotNetCore]
 
 Settings can be accessed via menu File->Preferences->Settings->User Settings / Workspace Settings->Text Editor.
 
+[keyboard shortcuts in windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) provide the list of the shortcuts.
+
 [tips-and-tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
+### Layout and View related
+
 - Ctrl + b => Toggle Sidebar
-- Ctrl + K Z => Zen Mode
+- Ctrl + K, z => Zen Mode, Esc to exit
+- Ctrl + Shift + v => switch between files opened
 
 [markdown in VSCode](https://code.visualstudio.com/docs/languages/markdown)
 
-To switch between views, press Ctrl+Shift+V in the editor. You can view the preview side-by-side (Ctrl+K, V) with the file you are editing and see changes reflected in real-time as you edit.
+For markdowns, you can view the preview side-by-side (Ctrl+K, v) with the file you are editing and see changes reflected in real-time as you edit.
 
-### Shortcut Keys
+### Code writing
 
-[keyboard-shortcuts-windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
-
-- F1 or Ctrl + Shift + p => Command Palette, prompts the available commands
-- Ctrl + Shift + b => Build
-- Ctrl + Shift + d => Debug
-- Shift + Alt + F => formats the whole document.
-- Ctrl + K, Ctrl + F => formats the currently selected source code.
-
-### Emmet
+#### Emmet
 
 [Emmet](https://emmet.io/) is the successor of HTML zen coding which saves tedious type for coding html, css.
 
@@ -50,14 +47,19 @@ To switch between views, press Ctrl+Shift+V in the editor. You can view the prev
 
 [emmet cheat sheet](https://docs.emmet.io/cheat-sheet/)
 
-## Commands
+### Code formating
 
-F1 => Command Palette
-Ctrl + ` => launch Terminal
+- Shift + Alt + F => formats the whole document.
+- Ctrl + K, Ctrl + F => formats the currently selected source code.
 
-## Debugging
+### Debug the app locally
 
 [Debugging in VS Code](https://code.visualstudio.com/docs/editor/debugging)
+
+- Ctrl + Shift + b => Build
+- Ctrl + Shift + d => Debug
+- F1 or Ctrl + Shift + p => Command Palette, prompts the available commands
+- Ctrl + ` => launch Terminal
 
 ## Extensions
 
