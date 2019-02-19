@@ -61,9 +61,19 @@ Ctrl + ` => launch Terminal
 
 ## Extensions
 
+Don't install too many extensions. Only install the extensions you need.
+
+Some must-have extensions for a web-developer.
+
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+[TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
+
 [prettier](https://github.com/prettier/prettier)
+
+## Common issues
+
+Run one Visual Studio Code at one time. If you have multiple VS Code instances open at the same time, sometimes you will see wierd issues.
 
 ## Resources
 
