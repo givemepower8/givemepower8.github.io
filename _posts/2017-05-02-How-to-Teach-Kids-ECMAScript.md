@@ -90,7 +90,7 @@ Array has a length property.
 
 Array's index is 0-based, from 0 to (array.length - 1).
 
-Items are access via the index.
+Items are accessed by the index.
 
 - Index and access items
 - Change item
@@ -141,3 +141,4 @@ Hard-to-catch ones are logic ones. The code compiles and works for most of the s
 - install chrome
 - install visual studio code
 - get an account on GitHub
+- install a static web server npm package
