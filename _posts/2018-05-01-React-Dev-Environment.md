@@ -3,13 +3,13 @@ layout: post
 title: React Dev Environment
 subtitle: React Dev Environment
 date: 2018-05-01 16:21:11 -0800
-categories: [MERN]
-tags: [React]
+categories: [React]
+tags: [MERN, React]
 ---
 
 # React Dev Environment
 
-It's recommended to use Visual Studio Code as the code editor.
+To me, Visual Studio Code is the great code editor for developing react applications.
 
 ## create-react-app
 
