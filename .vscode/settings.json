@@ -32,6 +32,7 @@
         "polyfill",
         "polyfills",
         "precommit",
+        "preflight",
         "preprocessors",
         "prettierrc",
         "reactjs",
@@ -51,6 +52,7 @@
         "unmount",
         "unmounting",
         "unshift",
+        "withchildren",
         "zakas"
     ],
     "editor.formatOnSave": true
