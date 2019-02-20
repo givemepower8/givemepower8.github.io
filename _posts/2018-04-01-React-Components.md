@@ -18,17 +18,18 @@ tags: [React, MERN]
 Some benefits of components:
 
 - Declarative programming
-  - Declarative views make code more predictable and easier to debug.
-  - Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
-- Components over DOMs
-  - Focus on Apps, no html predefined, DOM elements are dynamically injected
-  - Components should be simple
-- Build encapsulated components that manage their own state, then compose them to make complex UIs.
-  - component focuses on making thing works, not limited by existing html structure
+  - We have limited HTML tags. Declarative components extends HTML tag make code more readable.
+  - Design simple UIs for each state in your application, and React will efficiently update and render just the right components when your data changes.
+- More maintainable code
+  - Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+  - Focus on Apps and making thing works, no DOM structures, dynamically injected DOM elements tricks
+  - Components can be stateless or stateful
 - Development can be incremental
+  - stateless components are predictable and easier to debug
   - Components are testable
+  - JavaScript error in component shouldn't break the whole app.
 - Performance should be great
-- A JavaScript error in a part of the UI shouldn’t break the whole app.
+  - Components are virtual DOM
 
 ## How to write components
 
@@ -45,7 +46,7 @@ var Hello = function(props) {
   return <div>Hello {props.toWho}</div>;
 };
 
-ReactDOM.render(<Hello toWho="World" />, document.getElementById("root"));
+ReactDOM.render(<Hello toWho="World" />, document.getElementById('root'));
 ```
 
 The above is known as functional components which can be written in ECMAScript 6 class-based component which inherited from React.Component as following.
@@ -57,7 +58,7 @@ class Hello extends React.Component {
   }
 }
 
-ReactDOM.render(<Hello toWho="World" />, document.getElementById("root"));
+ReactDOM.render(<Hello toWho="World" />, document.getElementById('root'));
 ```
 
 Functional components are the best components when it comes to reusability because they are pure function with no state. They are very predictable as the same input will always give us the same output.
@@ -76,13 +77,11 @@ But sometimes you need state inside the component, class-based component or Reac
 
 ### JSX
 
-[introducing-jsx](https://reactjs.org/docs/introducing-jsx.html)
+JSX looks like a template language you directly write in JavaScript, usually in the return block in functional components, and in the render method in class-based component.
 
-[jsx-in-depth](https://reactjs.org/docs/jsx-in-depth.html)
+More than a a template language, JSX comes with the full power of JavaScript. Under the hood, JSX is transpiled into JavaScript to produce React elements.
 
-[react-without-jsx](https://reactjs.org/docs/react-without-jsx.html)
-
-JSX is html you directly write in JavaScript, return block in functional components and render method in class-based component.
+Inside JSX, we wrap variables in curly braces. You can put any valid JavaScript expression or call a JavaScript function inside the curly braces.
 
 ```js
 class HelloMessage extends React.Component {
@@ -99,19 +98,75 @@ The above is transpiled to the following:
 ```js
 class HelloMessage extends React.Component {
   render() {
-    return React.createElement("div", null, "Hello ", this.props.name);
+    return React.createElement('div', null, 'Hello ', this.props.name);
   }
 }
 
 ReactDOM.render(
-  React.createElement(HelloMessage, { name: "Taylor" }),
+  React.createElement(HelloMessage, { name: 'Taylor' }),
   mountNode
 );
 ```
 
+You can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:
+
+```js
+function getGreeting(user) {
+  if (user) {
+    return <h1>Hello, {formatName(user)}!</h1>;
+  }
+  return <h1>Hello, Stranger.</h1>;
+}
+
+const element = <h1>Hello, {formatName(user)}!</h1>;
+
+ReactDOM.render(element, document.getElementById('root'));
+```
+
+To avoid create spaghetti JSX code, the above is always recommended.
+
+You can use curly braces to embed a JavaScript expression in an attribute:
+
+```js
+const element = <img src={user.avatarUrl} />;
+```
+
+Don't put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute. React DOM uses camelCase property naming convention instead of HTML attribute names. For example, class becomes className in JSX, and tabindex becomes tabIndex.
+
+JSX tags may contain children:
+
+```js
+const element = (
+  <div>
+    <h1>Hello!</h1>
+    <h2>Good to see you here.</h2>
+  </div>
+);
+```
+
+By default, React DOM escapes any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that's not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent XSS (cross-site-scripting) attacks.
+
+Useful readings:
+
+- [introducing-jsx](https://reactjs.org/docs/introducing-jsx.html)
+- [jsx-in-depth](https://reactjs.org/docs/jsx-in-depth.html)
+- [react-without-jsx](https://reactjs.org/docs/react-without-jsx.html)
+
 ### ReactDOM.render
 
-In practice, most React apps only call ReactDOM.render() once.
+JSX is to create the React elements. React elements are presented in React DOM or virtual DOM. ReactDOM.render renders the React elements to a real DOM node.
+
+React elements are immutable. Once you create an element, you can't change its children or attributes. React element represents the UI at a certain point in time.
+
+Once render is called, React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary to bring the DOM to the desired state.
+
+React apps usually have a single root DOM node in the index.html.
+
+```js
+ReactDOM.render(element, document.getElementById('root'));
+```
+
+You can call render as many times as you want, but as a good practice, most React apps only call ReactDOM.render() once.
 
 ### props
 
@@ -125,7 +180,7 @@ function Welcome(props) {
 }
 
 const element = <Welcome name="Sara" />;
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById('root'));
 ```
 
 ### state
@@ -167,9 +222,9 @@ function Person(props) {
   );
 }
 
-const people = [{ name: "Max", age: "28" }, { name: "Tom", age: "29" }];
+const people = [{ name: 'Max', age: '28' }, { name: 'Tom', age: '29' }];
 
-ReactDOM.render(<People people={people} />, document.getElementById("root"));
+ReactDOM.render(<People people={people} />, document.getElementById('root'));
 ```
 
 #### key

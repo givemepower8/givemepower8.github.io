@@ -13,7 +13,11 @@ React is for developing a single page application. `<App />` is the root compone
 
 Often the case, there are multiple bounded domains / context in the app, other libraries or frameworks like express.js, angular setup the routes for the app. [React Router](https://github.com/ReactTraining/react-router) is another light-weight implementation which is very flexible.
 
-## Routing
+## Installation
+
+`npm install -D react-router-dom`
+
+## Basics
 
 React router providers declarative routing for React.
 
@@ -49,9 +53,9 @@ const WithChildren = ({ match }) => (
 
 There are three types of components in React Router:
 
-- router components, `<BrowserRouter>`, `<HashRouter>`
+- router components, `<BrowserRouter>`, `<HashRouter>`, `<MemoryRouter>`, `<StaticRouter>`
 - route matching components, `<Switch>`, `<Route>`
-- and navigation components, `<Link>`, `<NavLink>`, `<Redirect>`
+- and navigation components, `<Link>`, `<NavLink>`, `<Redirect>`, `<Prompt>`
 
 All of the components that you use in a web application should be imported from react-router-dom.
 
@@ -75,7 +79,11 @@ A `<Switch>` will iterate over all of its children `<Route>` elements and only r
 
 React Router provides a `<Link>` component to create links in your application. Wherever you render a `<Link>`, an anchor (`<a>`) will be rendered in your application's HTML.
 
+## Parameters
+
 Dynamic routing means routing takes place when the app is rendering.
+
+## history
 
 ## Resources
 
