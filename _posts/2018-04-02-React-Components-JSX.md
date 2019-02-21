@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Components JSX
-subtitle: React Components
+subtitle: React Components JSX
 date: 2018-04-02 16:21:11 -0800
 categories: [React]
 tags: [React, MERN]
