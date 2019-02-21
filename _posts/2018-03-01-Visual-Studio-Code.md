@@ -9,7 +9,11 @@ tags: [DevTools, VSCode, ECMAScript, Python, AspDotNetCore]
 
 # Visual Studio Code
 
-## Workplace user setting
+## Settings
+
+`Ctrl + ,` => launch settings
+
+There are two settings: workplace and user setting
 
 ### setting.json
 
@@ -37,7 +41,7 @@ For markdowns, you can view the preview side-by-side (Ctrl+K, v) with the file y
 
 ### Code writing
 
-#### Emmet
+#### Emmet for web development
 
 [Emmet](https://emmet.io/) is the successor of HTML zen coding which saves tedious type for coding html, css.
 
@@ -51,6 +55,14 @@ For markdowns, you can view the preview side-by-side (Ctrl+K, v) with the file y
 
 - Shift + Alt + F => formats the whole document.
 - Ctrl + K, Ctrl + F => formats the currently selected source code.
+
+#### editor.formatOnSave
+
+In settings, editor.formatOnSave can be turned on.
+
+#### Beautify
+
+#### prettier
 
 ### Debug the app locally
 
