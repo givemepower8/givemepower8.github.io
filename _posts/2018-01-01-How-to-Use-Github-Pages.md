@@ -47,7 +47,7 @@ You can add pages in markdown or html in the root folder.
 
 After grokking the [jekyll directory structure](https://jekyllrb.com/docs/structure/), you need to understand the [Pages](https://jekyllrb.com/docs/pages/) and [Posts](https://jekyllrb.com/docs/posts/). Those two are the most important building blocks for creating content.
 
-The content is often in markdown. GitHub Pages only supports [kramdown](https://kramdown.gettalong.org/syntax.html) as a Markdown processor.
+The content is often in markdown format. GitHub Pages only supports [kramdown](https://kramdown.gettalong.org/syntax.html) as a Markdown processor.
 
 Also Jekyll requires that Markdown files have front matter defined at the top of every file. [Front Matter](https://jekyllrb.com/docs/front-matter/) is just a set of metadata, delineated by three dashes in [YAML](https://yaml.org/) format.
 
