@@ -23,6 +23,8 @@ There are two settings: workplace and user setting
 
 ## Editor
 
+> [EditorConfig](https://editorconfig.org/) helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
+
 Settings can be accessed via menu File->Preferences->Settings->User Settings / Workspace Settings->Text Editor.
 
 [keyboard shortcuts in windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) provide the list of the shortcuts.
@@ -62,7 +64,23 @@ In settings, editor.formatOnSave can be turned on.
 
 #### Beautify
 
+[Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) javascript, JSON, CSS, Sass, and HTML in Visual Studio Code.
+
 #### prettier
+
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) is another tool to format your JavaScript / TypeScript / CSS.
+
+In case you have both installed, you need to specify certain file types.
+
+```json
+{
+  "beautify.language": {
+    "html": ["html", "htm"],
+    "css": [],
+    "js": []
+  }
+}
+```
 
 ### Debug the app locally
 
