@@ -63,6 +63,12 @@ If you don't like the default themes, you can use the \_sass, \_layouts, \_inclu
 
 [Permanent links](https://jekyllrb.com/docs/permalinks/) is used to instruct Jekyll how the urls are generated. It should be configured in the \_config.yml file. If you are using pagination, setting a permalink in the front matter of post will cause pagination to break.
 
+### Syntax highlighting
+
+[rogue](https://github.com/jneen/rouge) is Jekyll's default syntax highlighter supports the [following languages](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers).
+
+To customize the look and feel, add one \_rouge-github.scss in the \_sass folder and import it in the assets->css->main.scss file.
+
 ## Liquid
 
 > Safe, customer-facing template language for flexible web apps.
