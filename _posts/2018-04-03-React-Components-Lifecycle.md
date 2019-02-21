@@ -2,7 +2,7 @@
 layout: post
 title: React Components Lifecycle
 subtitle: React Components Lifecycle
-date: 2018-04-01 16:21:11 -0800
+date: 2018-04-03 16:21:11 -0800
 categories: [React]
 tags: [React, MERN]
 ---
@@ -23,6 +23,9 @@ The React component which extends React.Component goes through the following pha
 
 ![The phases and methods of React lifecycle](https://cdn-images-1.medium.com/max/2000/1*lINPzI9FsJnay2_fm4vmzA.png){: width="800" }
 
+or you can check the [lifecycle diagram here](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/).
+
 More readings:
 
+- [react component](https://reactjs.org/docs/react-component.html)
 - [understanding react v16.4 new component lifecycle methods](https://blog.bitsrc.io/understanding-react-v16-4-new-component-lifecycle-methods-fa7b224efd7d)
