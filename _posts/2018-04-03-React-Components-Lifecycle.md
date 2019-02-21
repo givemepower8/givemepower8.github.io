@@ -21,7 +21,7 @@ The React component which extends React.Component goes through the following pha
 - Updating
 - Unmounting
 
-![The phases and methods of React lifecycle](https://cdn-images-1.medium.com/max/2000/1*lINPzI9FsJnay2_fm4vmzA.png)
+![The phases and methods of React lifecycle](https://cdn-images-1.medium.com/max/2000/1*lINPzI9FsJnay2_fm4vmzA.png){: width="600" }
 
 More readings:
 
