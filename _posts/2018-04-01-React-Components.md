@@ -48,7 +48,7 @@ var Hello = function(props) {
 // the above can be written as following:
 // const Hello = (props) => { return <div>Hello {props.toWho}</div> };
 
-ReactDOM.render(<Hello toWho="World" />, document.getElementById("root"));
+ReactDOM.render(<Hello toWho="World" />, document.getElementById('root'));
 ```
 
 The above is known as functional components which can be written in ECMAScript 6 class-based component which inherited from React.Component as following.
@@ -60,7 +60,7 @@ class Hello extends React.Component {
   }
 }
 
-ReactDOM.render(<Hello toWho="World" />, document.getElementById("root"));
+ReactDOM.render(<Hello toWho="World" />, document.getElementById('root'));
 ```
 
 Functional components are the best components when it comes to reusability because they are pure function with no state. They are very predictable as the same input will always give us the same output.
@@ -100,9 +100,9 @@ function Person(props) {
   );
 }
 
-const people = [{ name: "Max", age: "28" }, { name: "Tom", age: "29" }];
+const people = [{ name: 'Max', age: '28' }, { name: 'Tom', age: '29' }];
 
-ReactDOM.render(<People people={people} />, document.getElementById("root"));
+ReactDOM.render(<People people={people} />, document.getElementById('root'));
 ```
 
 More readings:
@@ -121,7 +121,7 @@ function Welcome(props) {
 }
 
 const element = <Welcome name="Sara" />;
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById('root'));
 ```
 
 ### state
@@ -223,7 +223,7 @@ Once render is called, React DOM compares the element and its children to the pr
 React apps usually have a single root DOM node in the index.html.
 
 ```js
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById('root'));
 ```
 
 You can call render as many times as you want, but as a good practice, most React apps only call ReactDOM.render() once.
@@ -232,7 +232,9 @@ You can call render as many times as you want, but as a good practice, most Reac
 
 ### PropTypes
 
-## Pass data between components
+## Communication between components
+
+Communication between components depends on the direction.
 
 ### Context
 
@@ -242,9 +244,15 @@ Context is designed to share data that can be considered "global" for a tree of 
 
 Context id shared by different components, usually we pass props in the component hierarchy, but for some concept like theme, sign-in, toaster, etc., those ones can be accessed by any component by context.
 
-### parent -> child
+### parent -> children
+
+Parents communicates to children via props. When states change, props change.
 
 ### child -> parent
+
+Children communicate to parents via callbacks.
+
+### Redux
 
 ## Error Handling
 
@@ -284,14 +292,6 @@ class Timer extends React.Component {
 
 ReactDOM.render(<Timer />, mountNode);
 ```
-
-## AJAX
-
-[React AJAX FAQ](https://reactjs.org/docs/faq-ajax.html)
-
-[How to get "create-react-app" to work with your API](https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/)
-
-[weather-app](https://github.com/robwelan/weather-app)
 
 ## Resources
 

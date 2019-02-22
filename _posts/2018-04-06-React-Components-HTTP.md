@@ -156,3 +156,9 @@ class AxiosExampleComponent extends React.Component {
   }
 }
 ```
+
+More readings:
+
+- [React AJAX FAQ](https://reactjs.org/docs/faq-ajax.html)
+- [How to get "create-react-app" to work with your API](https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/)
+- [weather-app](https://github.com/robwelan/weather-app)
