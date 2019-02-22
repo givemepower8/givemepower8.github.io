@@ -100,6 +100,14 @@ When you use auto format while saving in VS Code, for jsx files, the formatting 
     ]
 ```
 
+or change vscode preferences settings => user settings below:
+
+```js
+"files.associations": {
+        "*.js":"javascriptreact"
+    }
+```
+
 Sometimes you will see the following error:
 
 > There might be a problem with the project dependency tree.
