@@ -7,8 +7,10 @@ categories: [React]
 tags: [React, Redux]
 ---
 
-# React
+# React Redux
 
 ## Flux
 
 [Flux](https://github.com/facebook/flux)
+
+[Shopping cart](https://codesandbox.io/s/github/reactjs/redux/tree/master/examples/shopping-cart)

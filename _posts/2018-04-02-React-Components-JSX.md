@@ -9,11 +9,13 @@ tags: [React, MERN]
 
 # JSX
 
-JSX looks like a template language you directly write in JavaScript, usually in the return block in functional components, and in the render method in class-based component.
+JSX looks like a template language you directly write in JavaScript, usually in the return block in functional components, and in the render method in class-based components.
 
 More than a a template language, JSX comes with the full power of JavaScript. Under the hood, JSX is transpiled into JavaScript to produce React elements.
 
-Inside JSX, we wrap variables in curly braces. You can put any valid JavaScript expression or call a JavaScript function inside the curly braces.
+Inside JSX, we use props to wrap variables in curly braces. Arguments are often passed by attributes.
+
+And You can put any valid JavaScript expression or call a JavaScript function inside the curly braces.
 
 ```js
 class HelloMessage extends React.Component {
@@ -30,12 +32,12 @@ The above is transpiled to the following:
 ```js
 class HelloMessage extends React.Component {
   render() {
-    return React.createElement('div', null, 'Hello ', this.props.name);
+    return React.createElement("div", null, "Hello ", this.props.name);
   }
 }
 
 ReactDOM.render(
-  React.createElement(HelloMessage, { name: 'Taylor' }),
+  React.createElement(HelloMessage, { name: "Taylor" }),
   mountNode
 );
 ```
@@ -75,7 +77,7 @@ function getGreeting(user) {
 
 const element = <h1>Hello, {formatName(user)}!</h1>;
 
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(element, document.getElementById("root"));
 ```
 
 To avoid create spaghetti JSX code, always remember that whenever conditions become too complex, it might be a good time to extract a component or use some functions.
@@ -95,10 +97,10 @@ function Mailbox(props) {
   );
 }
 
-const messages = ['React', 'Re: React', 'Re:Re: React'];
+const messages = ["React", "Re: React", "Re:Re: React"];
 ReactDOM.render(
   <Mailbox unreadMessages={messages} />,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 ```
 
@@ -162,14 +164,14 @@ class Page extends React.Component {
       <div>
         <WarningBanner warn={this.state.showWarning} />
         <button onClick={this.handleToggleClick}>
-          {this.state.showWarning ? 'Hide' : 'Show'}
+          {this.state.showWarning ? "Hide" : "Show"}
         </button>
       </div>
     );
   }
 }
 
-ReactDOM.render(<Page />, document.getElementById('root'));
+ReactDOM.render(<Page />, document.getElementById("root"));
 ```
 
 ## Rendering Multiple Components
@@ -231,7 +233,7 @@ function NumberList(props) {
 const numbers = [1, 2, 3, 4, 5];
 ReactDOM.render(
   <NumberList numbers={numbers} />,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 ```
 

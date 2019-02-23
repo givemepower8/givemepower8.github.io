@@ -18,17 +18,18 @@ tags: [React, MERN]
 Some benefits of components:
 
 - Declarative programming
-  - We have limited HTML tags. Declarative components extends HTML tag make code more readable.
-  - Design simple UIs for each state in your application, and React will efficiently update and render just the right components when your data changes.
+  - We compose html with HTML tags / elements. UI and Logic has tight dependency on how html elements are composed. React components enable declarative programming extends HTML tag to make code more readable.
+  - Components has it's own events like onChange, onClick which makes the code easy to understand.
 - More maintainable code
   - Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
   - Focus on Apps and making thing works, no DOM structures, dynamically injected DOM elements tricks
-  - Components can be stateless or stateful
+  - React takes care to efficiently update and render just the right components when your data changes.
   - Components are reuseable, always split components into smaller components
 - Development can be incremental
-  - stateless components are predictable and easier to debug
-  - Components are testable
-  - JavaScript error in component shouldn't break the whole app.
+  - Stateless components are predictable and easier to debug
+  - Stateful component has responsibility over a single part of the functionality provided by the component, and that responsibility is entirely encapsulated by the component.
+  - components are testable
+  - JavaScript error in component shouldn't break the whole web app.
 - Performance should be great
   - Components are virtual DOM
 
@@ -48,7 +49,7 @@ var Hello = function(props) {
 // the above can be written as following:
 // const Hello = (props) => { return <div>Hello {props.toWho}</div> };
 
-ReactDOM.render(<Hello toWho="World" />, document.getElementById('root'));
+ReactDOM.render(<Hello toWho="World" />, document.getElementById("root"));
 ```
 
 The above is known as functional components which can be written in ECMAScript 6 class-based component which inherited from React.Component as following.
@@ -60,7 +61,7 @@ class Hello extends React.Component {
   }
 }
 
-ReactDOM.render(<Hello toWho="World" />, document.getElementById('root'));
+ReactDOM.render(<Hello toWho="World" />, document.getElementById("root"));
 ```
 
 Functional components are the best components when it comes to reusability because they are pure function with no state. They are very predictable as the same input will always give us the same output.
@@ -77,7 +78,9 @@ But sometimes you need state inside the component, class-based component or Reac
   - setState()
   - forceUpdate()
 
-Components can refer to other components in their output. In the following example, People contains a list of Person components.
+### Parent Children components
+
+Parent components can refer to children components in their output. In the following example, People contains a list of Person components.
 
 ```js
 function People(props) {
@@ -100,9 +103,9 @@ function Person(props) {
   );
 }
 
-const people = [{ name: 'Max', age: '28' }, { name: 'Tom', age: '29' }];
+const people = [{ name: "Max", age: "28" }, { name: "Tom", age: "29" }];
 
-ReactDOM.render(<People people={people} />, document.getElementById('root'));
+ReactDOM.render(<People people={people} />, document.getElementById("root"));
 ```
 
 More readings:
@@ -111,7 +114,7 @@ More readings:
 
 ### props
 
-props are parameter which takes in the arguments from JSX. The props are mapped to the attributes inside the component tags.
+Parent component communicates with children components using props. props are parameter which takes in the arguments from JSX. The props are mapped to the attributes inside the component tags.
 
 [render-props](https://reactjs.org/docs/render-props.html)
 
@@ -121,7 +124,7 @@ function Welcome(props) {
 }
 
 const element = <Welcome name="Sara" />;
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(element, document.getElementById("root"));
 ```
 
 ### state
@@ -223,7 +226,7 @@ Once render is called, React DOM compares the element and its children to the pr
 React apps usually have a single root DOM node in the index.html.
 
 ```js
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(element, document.getElementById("root"));
 ```
 
 You can call render as many times as you want, but as a good practice, most React apps only call ReactDOM.render() once.
@@ -304,5 +307,10 @@ ReactDOM.render(<Timer />, mountNode);
 [vscode-react-sample](https://github.com/Microsoft/vscode-react-sample)
 
 - burger builder
+
   - [ReactJS-burger-builder](https://codesandbox.io/s/github/Deepak2607/ReactJS-burger-builder/tree/master/)
   - [burger-builder-react](https://github.com/kinny94/burger-builder-react)
+
+- shopping cart
+  - [real time cart](https://deepstreamhub.com/tutorials/example-apps/realtime-cart/)
+  - [shopping cart](https://github.com/sivadass/react-shopping-cart)
