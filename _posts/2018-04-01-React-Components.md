@@ -251,6 +251,8 @@ Context id shared by different components, usually we pass props in the componen
 
 Parents communicates to children via props. When states change, props change.
 
+[Simple Cart](https://codepen.io/hermantnet/pen/EgWEom?editors=1010)
+
 ### child -> parent
 
 Children communicate to parents via callbacks.
@@ -304,6 +306,7 @@ ReactDOM.render(<Timer />, mountNode);
 
 ### Examples
 
+[React University](https://github.com/react-u/)
 [vscode-react-sample](https://github.com/Microsoft/vscode-react-sample)
 
 - burger builder
@@ -314,3 +317,4 @@ ReactDOM.render(<Timer />, mountNode);
 - shopping cart
   - [real time cart](https://deepstreamhub.com/tutorials/example-apps/realtime-cart/)
   - [shopping cart](https://github.com/sivadass/react-shopping-cart)
+  - [react-shopping-cart](https://github.com/Gigacore/react-shopping-cart)

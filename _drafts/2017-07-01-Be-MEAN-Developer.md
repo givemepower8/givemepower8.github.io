@@ -21,6 +21,10 @@ tags: [nodejs, expressjs, mongoDB, angular]
 
 ## Resources
 
+### Books
+
+[Full-Stack React Projects](https://www.packtpub.com/web-development/full-stack-react-projects)
+
 ### Community
 
 [ts mean](https://www.tsmean.com/)

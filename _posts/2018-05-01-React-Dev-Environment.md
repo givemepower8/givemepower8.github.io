@@ -119,6 +119,10 @@ Sometimes you will see the following error:
 
 You can create a .env file and add 'SKIP_PREFLIGHT_CHECK=true'
 
+## MERN
+
+[MERN simple setup](https://github.com/shamahoque/mern-simplesetup)
+
 ## StoryBook
 
 [StoryBook](https://storybook.js.org/basics/introduction/)
