@@ -42,6 +42,7 @@
         "replyto",
         "sinonjs",
         "stateful",
+        "stringify",
         "tabindex",
         "templating",
         "transpilation",
