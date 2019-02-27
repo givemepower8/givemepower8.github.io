@@ -32,12 +32,12 @@ The above is transpiled to the following:
 ```js
 class HelloMessage extends React.Component {
   render() {
-    return React.createElement("div", null, "Hello ", this.props.name);
+    return React.createElement('div', null, 'Hello ', this.props.name);
   }
 }
 
 ReactDOM.render(
-  React.createElement(HelloMessage, { name: "Taylor" }),
+  React.createElement(HelloMessage, { name: 'Taylor' }),
   mountNode
 );
 ```
@@ -61,6 +61,17 @@ const element = (
 );
 ```
 
+```js
+const element = (
+  <div>
+    {/* Comment goes here */}
+    Hello, {name}!
+  </div>
+);
+```
+
+Sometimes you may need a space bewteen the html elements, you can use the \&nbsp; or you can use `{ }`.
+
 By default, React DOM escapes any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that's not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent XSS (cross-site-scripting) attacks.
 
 ## Conditional rendering
@@ -77,7 +88,7 @@ function getGreeting(user) {
 
 const element = <h1>Hello, {formatName(user)}!</h1>;
 
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById('root'));
 ```
 
 To avoid create spaghetti JSX code, always remember that whenever conditions become too complex, it might be a good time to extract a component or use some functions.
@@ -97,10 +108,10 @@ function Mailbox(props) {
   );
 }
 
-const messages = ["React", "Re: React", "Re:Re: React"];
+const messages = ['React', 'Re: React', 'Re:Re: React'];
 ReactDOM.render(
   <Mailbox unreadMessages={messages} />,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 ```
 
@@ -164,14 +175,14 @@ class Page extends React.Component {
       <div>
         <WarningBanner warn={this.state.showWarning} />
         <button onClick={this.handleToggleClick}>
-          {this.state.showWarning ? "Hide" : "Show"}
+          {this.state.showWarning ? 'Hide' : 'Show'}
         </button>
       </div>
     );
   }
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<Page />, document.getElementById('root'));
 ```
 
 ## Rendering Multiple Components
@@ -233,7 +244,7 @@ function NumberList(props) {
 const numbers = [1, 2, 3, 4, 5];
 ReactDOM.render(
   <NumberList numbers={numbers} />,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 ```
 
