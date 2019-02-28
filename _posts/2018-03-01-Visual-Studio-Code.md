@@ -9,6 +9,16 @@ tags: [DevTools, VSCode, ECMAScript, Python, AspDotNetCore]
 
 # Visual Studio Code
 
+## Must-have plugins
+
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+[Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+
+[prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) see more on <https://prettier.io/>
+
+[vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
+
 ## Settings
 
 `Ctrl + ,` => launch settings

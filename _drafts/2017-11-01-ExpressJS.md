@@ -101,8 +101,14 @@ Express is a web framework that has minimal functionality of its own. An Express
 
 `app.use(...)`
 
+### multer
+
+[multer](https://www.npmjs.com/package/multer)
+
 ## Resources
 
 [express](https://devdocs.io/express/)
 
 [expressjs tutorial](https://www.tutorialspoint.com/expressjs/index.htm)
+
+[Logging in a Node.js Express app with Morgan and Bunyan](https://medium.com/@tobydigz/logging-in-a-node-express-app-with-morgan-and-bunyan-30d9bf2c07a)

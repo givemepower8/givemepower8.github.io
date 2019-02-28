@@ -70,6 +70,8 @@ At the first stage, you need to help the kids get familiar with the terms and ha
 
 [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
 
+[Getting to know asynchronous JavaScript: Callbacks, Promises and Async/Await](https://medium.com/codebuddies/getting-to-know-asynchronous-javascript-callbacks-promises-and-async-await-17e0673281ee)
+
 ### Array
 
 [Array in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
@@ -142,3 +144,5 @@ Hard-to-catch ones are logic ones. The code compiles and works for most of the s
 - install visual studio code
 - get an account on GitHub
 - install a static web server npm package
+
+[code ultimate guide to javascript algorithms](https://github.com/scotch-io/ultimate-guide-to-javascript-algorithms) for [scotch.io course](https://scotch.io/courses/the-ultimate-guide-to-javascript-algorithms/structure-and-setup)
