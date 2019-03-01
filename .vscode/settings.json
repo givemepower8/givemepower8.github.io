@@ -59,5 +59,6 @@
         "withchildren",
         "zakas"
     ],
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "html.format.enable": false
 }
