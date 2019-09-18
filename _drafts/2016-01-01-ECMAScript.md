@@ -16,33 +16,18 @@ On June 17, 2015, ECMA International published the sixth major version of ECMASc
 
 Babel transpiles ECMAScript 2015+ to ECMAScript 5.1 so all the ECMA 2015+ features work in all modern browsers.
 
-| Version | Official Name         | Description                                                                                                         |
-| ------- | --------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| 1       | ECMAScript 1 (1997)   | First Edition.                                                                                                      |
-| 2       | ECMAScript 2 (1998)   | Editorial changes only.                                                                                             |
-| 3       | ECMAScript 3 (1999)   | Added Regular Expressions. Added try/catch.                                                                         |
-| 4       | ECMAScript 4          | Never released.                                                                                                     |
-| 5       | ECMAScript 5 (2009)   | Added "strict mode". Added JSON support. Added String.trim(). Added Array.isArray(). Added Array Iteration Methods. |
-| 5.1     | ECMAScript 5.1 (2011) | Editorial changes                                                                                                   |
-| 6       | ECMAScript 2015       | Added let and const. Added default parameter values. Added Array.find(). Added Array.findIndex().                   |
-| 7       | ECMAScript 2016       | Added exponential operator (\*\*). Added Array.prototype.includes.                                                  |
-| 8       | ECMAScript 2017       | Added string padding. Added new Object properties. Added Async functions. Added Shared Memory.                      |
-| 9       | ECMAScript 2018       | Added rest / spread properties. Added Asynchronous iteration. Added Promise.finally(). Additions to RegExp.         |
-
-### ES5
-
-[JavaScript brief history and ECMAScript(ES6,ES7,ES8,ES9) features](https://medium.com/@madasamy/javascript-brief-history-and-ecmascript-es6-es7-es8-features-673973394df4)
-
-[ES5 features](https://www.w3schools.com/js/js_es5.asp)
-
-### ES6 (ECMAScript 2015)
-
-[node es6 support](https://nodejs.org/en/docs/es6/)
-[ES6 features](https://www.w3schools.com/js/js_es6.asp)
-[es6-features](http://es6-features.org)
-
-[ES6 Compatibility](http://kangax.github.io/compat-table/es6/)
-[ES6-boilerplate](https://github.com/metagrover/ES6-boilerplate)
+| Version | Official Name         | Description                                                                                                                             |
+| ------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 1       | ECMAScript 1 (1997)   | First Edition.                                                                                                                          |
+| 2       | ECMAScript 2 (1998)   | Editorial changes only.                                                                                                                 |
+| 3       | ECMAScript 3 (1999)   | Added Regular Expressions. Added try/catch.                                                                                             |
+| 4       | ECMAScript 4          | Never released.                                                                                                                         |
+| 5       | ECMAScript 5 (2009)   | Added "strict mode". Added JSON support. Added String.trim(). Added Array.isArray(). Added Array Iteration Methods.                     |
+| 5.1     | ECMAScript 5.1 (2011) | Editorial changes                                                                                                                       |
+| 6       | ECMAScript 2015       | Major new feature. Class and Modules. Added let and const. Added default parameter values. Added Array.find(). Added Array.findIndex(). |
+| 7       | ECMAScript 2016       | Added exponential operator (\*\*). Added Array.prototype.includes.                                                                      |
+| 8       | ECMAScript 2017       | Added string padding. Added new Object properties. Added Async functions. Added Shared Memory.                                          |
+| 9       | ECMAScript 2018       | Added rest / spread properties. Added Asynchronous iteration. Added Promise.finally(). Additions to RegExp.                             |
 
 ### ES7
 
