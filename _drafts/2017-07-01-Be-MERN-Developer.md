@@ -1,23 +1,15 @@
 ---
 layout: post
-title: Be a MEAN Developer
-subtitle: Be a MEAN Developer
+title: Be a MERN Developer
+subtitle: Be a MERN Developer
 date: 2017-08-01 16:16:01 -0800
 categories: [nodejs]
-tags: [nodejs, expressjs, mongoDB, angular]
+tags: [nodejs, expressjs, mongoDB, react]
 ---
 
-# Be a MEAN Developer
+# Be a MERN Developer
 
-## mongoDB
-
-## expressjs
-
-[expressjs](https://expressjs.com/)
-
-## angular
-
-## nodeJS
+MERN usually refers to mongoDB, [expressjs](https://expressjs.com/), react and nodeJS.
 
 ## Resources
 
@@ -28,5 +20,3 @@ tags: [nodejs, expressjs, mongoDB, angular]
 ### Community
 
 [ts mean](https://www.tsmean.com/)
-
-[mern.io](http://mern.io/)
