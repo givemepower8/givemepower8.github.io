@@ -11,6 +11,8 @@ tags: [TypeScript]
 
 Lots of language features are already included in ECMA script.
 
+[Practical Ways to Write Better JavaScript](https://stackoverflow.blog/2019/09/12/practical-ways-to-write-better-javascript/)
+
 ## Variable
 
 [Basic Types](http://www.typescriptlang.org/docs/handbook/basic-types.html)
