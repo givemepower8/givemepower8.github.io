@@ -1,4 +1,9 @@
 {
+  "Todo": {
+    "id": { "string": {} },
+    "name": { "string": {} },
+    "completed": {"boolean": {}}
+  },
   "Post": {
     "title": { "string": {} },
     "comments": {
