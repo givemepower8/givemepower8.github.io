@@ -2,13 +2,13 @@
 layout: post
 title: How to use GitHub Pages
 subtitle: How to use GitHub Pages
-date: 2018-01-01 16:16:01 -0800
+date: 2017-11-01 16:16:01 -0800
 categories: [GithubPages]
 tags: [jekyll, GithubPages]
 ---
 
 # How to use GitHub Pages to take notes
 
-Having been taking notes in OneNote, various word documentations, all the places, I like GitHub the best.
+Having been taking notes in OneNote, various word documentations, other web sites and all over the place, I like GitHub Pages the best.
 
-This site is to my technical notes while I am learning new web technologies.
+GitHub Pages is built using Jekyll, a static site generator, that takes Markdown files and converts them to a website. Usually it's a great way for writing blogs. But not like blogs, I enjoy coming back often to maintain the notes here. This site is to my technical notes while I am learning new web technologies.
